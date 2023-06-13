@@ -1,0 +1,41 @@
+/* FONT */
+@font-face {
+    font-family: 'OrgonPlan-Regular';
+    src: url('fonts/OrgonPlan-Regular.ttf')  format('truetype')
+  }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1100px;
+    height: 56px;
+    font-family: 'OrgonPlan-Regular';
+    color: #5cb85c;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    color: #999999;
+}
+
+.menu .active {
+    color: #333333;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    color: #666666;
+}
