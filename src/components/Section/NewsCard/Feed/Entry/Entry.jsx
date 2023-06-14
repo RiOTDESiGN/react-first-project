@@ -10,10 +10,10 @@ export default function Entry() {
       if (article.slug === articleSlug) {
         return {
           ...article,
-          favorited: !article.favorited, // Toggle the favorited state
+          favorited: !article.favorited,
           favoritesCount: article.favorited
-            ? article.favoritesCount - 1 // Decrease count if favorited
-            : article.favoritesCount + 1, // Increase count if not favorited
+            ? article.favoritesCount - 1
+            : article.favoritesCount + 1,
         };
       }
       return article;
