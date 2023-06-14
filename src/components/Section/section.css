@@ -1,5 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
 section {
+    display: flex;
     flex-grow: 1;
     justify-content: center;
-    width: 1000px;
+}
+
+.newscard {
+    background-color: brown;
+    
+}
+
+.tags {
+    background-color: rgb(9, 73, 52);
 }

@@ -3,7 +3,7 @@ import PageTitle from './components/PageTitle/PageTitle'
 import Section from './components/Section/Section'
 import Footer from './components/Footer/Footer'
 
-import './index.css'
+import './app.css'
 
 export default function App() {
     return (
