@@ -8,12 +8,13 @@ export default function Entry() {
   const handleFavoriteClick = (articleSlug) => {
     const updatedArticles = articleList.map((article) => {
       if (article.slug === articleSlug) {
+        const favoritesCount = article.favoritesCount + (article.favorited ? -1 : 1);
+        const favorited = !article.favorited;
+
         return {
           ...article,
-          favorited: !article.favorited,
-          favoritesCount: article.favorited
-            ? article.favoritesCount - 1
-            : article.favoritesCount + 1,
+          favorited,
+          favoritesCount,
         };
       }
       return article;
@@ -25,7 +26,7 @@ export default function Entry() {
   return (
     <div>
       {articleList.map((article) => (
-        <div key={article.slug} className="entry">
+        <div key={article.slug} className={`entry ${article.favorited ? 'favorited' : ''}`}>
           <div className="article_author">
             {article.author.username}
             <div>

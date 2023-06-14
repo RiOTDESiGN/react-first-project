@@ -8,7 +8,7 @@ export default function Tags() {
 
   return (
     <div className="tags">
-      <h1>Tags:</h1>
+      <h3>Tags:</h3>
       <span>{uniqueTags.join(", ")}</span>
     </div>
   );

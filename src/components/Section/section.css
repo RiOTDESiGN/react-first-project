@@ -14,6 +14,21 @@ section {
     width: 100%;
 }
 
+h1 {
+    color: #5cb85c;
+    text-shadow: 1px 1px 1px #000;
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+h3 {
+    color: #5cb85c;
+    text-shadow: 1px 1px 1px #000;
+}
+
 .newscard {
     display: flex;
     flex-direction: column;
