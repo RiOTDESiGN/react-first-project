@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.entry {
+    border: 3px solid blue;
+}
+
+.article_author {
+    background-color: brown;
+}
+
+.article_title {
+    background-color: aqua;
+}
+
+.article_teaser {
+    background-color: chocolate;
+}
+
+.article_tags {
+    background-color: cornflowerblue;
+}
