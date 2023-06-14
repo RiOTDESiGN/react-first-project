@@ -8,6 +8,7 @@
 section {
     display: flex;
     flex-grow: 1;
+    gap: 20px;
     justify-content: center;
     padding: 20px 50px;
     width: 100%;
@@ -16,29 +17,25 @@ section {
 .newscard {
     display: flex;
     flex-direction: column;
-    background-color: brown;
-    width: 80%;
-}
-
-.tags {
-    background-color: rgb(9, 73, 52);
-    width: 20%;
+    width: 800px;
+    gap: 10px;
 }
 
 .filters {
-    background-color: blueviolet;
     height: 30px;
 }
 
 .feed {
     display: flex;
     flex-direction: column;
-    background-color: chartreuse;
     height: 100%;
-    gap: 6px;
 }
 
 .pagination {
-    background-color: aliceblue;
     height: 30px;
+}
+
+.tags {
+    width: 200px;
+    margin-top: 16px;
 }

@@ -1,3 +1,9 @@
+/* FONT */
+@font-face {
+    font-family: 'OrgonPlan-Regular';
+    src: url('fonts/OrgonPlan-Regular.ttf')  format('truetype')
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +16,7 @@ body {
     justify-content: center;
     width: 100%;
     overflow-x: hidden;
+    font-family: 'OrgonPlan-Regular';
 }
 
 .app {

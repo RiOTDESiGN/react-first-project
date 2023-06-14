@@ -6,21 +6,38 @@
 }
 
 .entry {
-    border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .article_author {
-    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+.article_author button {
+    border-radius: 6px;
+    padding: 2px 4px;
+    margin: 3px 0 3px 6px;
+    width: 80px;
 }
 
 .article_title {
-    background-color: aqua;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .article_teaser {
-    background-color: chocolate;
+    font-style: italic;
 }
 
 .article_tags {
-    background-color: cornflowerblue;
+    text-align: right;
 }
