@@ -28,21 +28,3 @@ export default function Entry() {
     </div>
   );
 }
-
-
-
-
-// import './entry.css'
-
-// export default function Entry() {
-//     return (
-//         <div class="entry">
-//             <div className="article_author">Author & Likes</div>
-//                 <div>
-//                     <div className="article_title">Article Title</div>
-//                     <div className="article_teaser">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aliquid est beatae et, sunt voluptatibus dolore accusantium? Ipsa at nobis ducimus omnis rem! Ipsa quam aperiam reprehenderit debitis, iste incidunt.</div>
-//                 </div>
-//             <div className="article_tags">Read more... and Tags</div>
-//         </div>
-//     )
-// }
