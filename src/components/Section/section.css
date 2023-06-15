@@ -27,30 +27,35 @@ h2 {
 h3 {
     color: #5cb85c;
     text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
 }
 
 .newscard {
     display: flex;
     flex-direction: column;
     width: 800px;
-    gap: 10px;
+    gap: 2px;
 }
 
 .filters {
     height: 30px;
 }
 
-.feed {
+/* .feed {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
+} */
 
 .pagination {
     height: 30px;
 }
 
-.tags {
-    width: 200px;
-    margin-top: 16px;
+.tags-container {
+    width: 240px;
+}
+
+.tags-wrapper {
+    position: sticky;
+    top: 60px;
 }

@@ -1,6 +1,6 @@
-import './entry.css';
+import './articles.css';
 import { useState } from 'react';
-import articles from '../../../articles.json';
+import articles from '../articles.json';
 
 export default function Entry() {
   const [articleList, setArticleList] = useState(articles.articles);
@@ -36,11 +36,15 @@ export default function Entry() {
               </button>
             </div>
           </div>
-          <div>
+          <div className="article_teaser_container">
             <div className="article_title">{article.title}</div>
             <div className="article_teaser">{article.description}</div>
           </div>
-          <div className="article_tags">{article.tagList.join(', ')}</div>
+          <div className="article_tags">
+          {article.tagList.map((tag) => (
+              <div key={tag} className="tag">{tag}</div>
+            ))}
+          </div>
         </div>
       ))}
     </div>
