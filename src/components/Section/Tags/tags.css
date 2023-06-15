@@ -30,5 +30,10 @@
     user-select: none;
 }
 .tag:hover {
-    background-color: antiquewhite;
+    color: #000;
+    background-color: #48556250;
+}
+.tag:active {
+    color: #000;
+    background-color: #5cb85c;
 }

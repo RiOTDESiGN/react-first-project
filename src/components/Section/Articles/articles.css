@@ -14,8 +14,28 @@
     gap: 10px;
 }
 
+.heart {
+    fill: #fff;
+    position: relative;
+    top: 2px;
+    width: 15px;
+    margin-bottom: 3px;
+}
+.favorited .heart {
+    fill: #5cb85c;
+    position: relative;
+    top: 2px;
+    width: 15px;
+    animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
 .favorited .article_author {
-    background-color: #5cb85c;
+    background: linear-gradient(to right, #5cb85c, transparent);
 }
 
 .favorited .article_author button {
@@ -31,12 +51,20 @@
     border-radius: 10px;
     padding: 4px 8px;
 }
+.favorited .article_author {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: 600;
+}
 .article_author button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #5cb85c;
     border: 1px solid grey;
     border-radius: 4px;
     padding: 4px 4px;
-    margin: 3px 0 3px 6px;
+    margin: 3px 0;
     width: 80px;
 }
 
@@ -58,10 +86,19 @@
     font-style: italic;
 }
 
+.article_tags_container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.article_tags_container a {
+    color: inherit;
+    font-size: 12px;
+}
+
 .article_tags {
     display: flex;
-    justify-content: right;
     gap: 4px;
     pointer-events: none;
-    margin-right: 10px;
 }

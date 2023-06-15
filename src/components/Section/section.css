@@ -14,6 +14,10 @@ section {
     width: 100%;
 }
 
+hr {
+    margin-bottom: 14px;
+}
+
 h1 {
     color: #5cb85c;
     text-shadow: 1px 1px 1px #000;
@@ -41,15 +45,26 @@ h3 {
     height: 30px;
 }
 
-/* .feed {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-} */
-
 .pagination {
+    display: flex;
     height: 30px;
 }
+
+.pagination button {
+    flex-grow: 1;
+    margin: 2px 2px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+.pagination button:hover {
+    color: #5cb85c;
+    background-color: #48556250;
+    font-weight: 600;
+}
+.pagination button.active {
+    background-color: #5cb85c;
+    color: #fff;
+}  
 
 .tags-container {
     width: 240px;
