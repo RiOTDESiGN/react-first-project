@@ -18,6 +18,34 @@ body {
     overflow-x: hidden;
     font-family: 'OrgonPlan-Regular';
 }
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+.progress-header {
+    position: fixed;
+    top: 28px;
+    left: 200px;
+    z-index: 10;
+}
+  
+.progress-container {
+    width: calc(100vw - 480px);
+    background: #fff;
+}
+  
+.progress-bar {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #5cb85c);
+    width: 0%;
+}
 
 .app {
     display: flex;

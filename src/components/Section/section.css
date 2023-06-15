@@ -52,6 +52,7 @@ h3 {
 
 .pagination button {
     flex-grow: 1;
+    max-width: 94px;
     margin: 2px 2px;
     border-radius: 6px;
     border: 1px solid gray;

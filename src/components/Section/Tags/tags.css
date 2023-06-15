@@ -28,6 +28,7 @@
     border-radius: 6px;
     font-size: 12px;
     user-select: none;
+    cursor: pointer;
 }
 .tag:hover {
     color: #000;
@@ -36,4 +37,14 @@
 .tag:active {
     color: #000;
     background-color: #5cb85c;
+}
+
+.selected {
+    color: #000;
+    background-color: #5cb85c;
+}
+.selected:hover {
+    color: #000;
+    background-color: #5cb85c;
+    font-weight: 600;
 }

@@ -26,9 +26,23 @@ export default function App() {
     };
   }, []);
 
+  window.onscroll = function() {scrollProgress()};
+
+  function scrollProgress() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
   return (
     <div className="app">
       <Navbar />
+      <div className="progress-header">
+        <div className="progress-container">
+          <div className="progress-bar" id="myBar"></div>
+        </div>
+      </div>
       <PageTitle />
       <Section />
       <Footer />
