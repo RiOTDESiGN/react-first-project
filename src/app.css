@@ -1,7 +1,7 @@
 /* FONT */
 @font-face {
     font-family: 'OrgonPlan-Regular';
-    src: url('src/fonts/OrgonPlan-Regular.woff')  format('woff')
+    src: url('/src/fonts/OrgonPlan-Regular.woff')  format('woff')
 }
 
 *, *::before, *::after {
@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    font-family: 'OrgonPlan-Regular';
 }
 
 body {
@@ -16,7 +17,6 @@ body {
     justify-content: center;
     width: 100%;
     overflow-x: hidden;
-    font-family: 'OrgonPlan-Regular';
 }
 ::-webkit-scrollbar {
     width: 0px;
